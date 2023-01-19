@@ -1,4 +1,3 @@
-const e = require("express");
 const { Schema, model } = require("mongoose");
 
 const userSchema = new Schema({
@@ -14,4 +13,4 @@ const userSchema = new Schema({
 
 const User = model("User", userSchema);
 
-exports.User = User;
+module.exports = User;
